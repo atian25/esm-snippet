@@ -1,0 +1,19 @@
+{
+  "name": "esm-snippet",
+  "version": "0.0.0",
+  "description": "some snippet for esm practice",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "dirname-filename-esm": "^1.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "jest": "^27.0.5"
+  },
+  "scripts": {
+    "lint": "eslint . --fix",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "ci": "eslint . && npm test"
+  }
+}
