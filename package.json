@@ -14,7 +14,8 @@
   "scripts": {
     "lint": "eslint . --fix",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "ci": "eslint . && NODE_OPTIONS=--experimental-vm-modules jest --coverage"
+    "cov": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "ci": "eslint . && npm run cov"
   },
   "jest": {
     "transform": {},
